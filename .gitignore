@@ -1,3 +1,7 @@
 /.venv
-/data
+/data/FashionMNIST
+/data/MNIST
 /runs
+*.gz
+data/cifar-10-batches-py
+*.pyc
