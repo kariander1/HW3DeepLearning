@@ -11,7 +11,7 @@ def get_mnist_data(batch_size):
     trainset = torchvision.datasets.MNIST(root='./data', train=True,
                                           download=True, transform=transform)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
-                                              shuffle=True, num_workers=2)
+                                              shuffle=True)
 
     return trainloader
 
@@ -24,7 +24,7 @@ def get_fashion_mnist_data(batch_size):
     trainset = torchvision.datasets.FashionMNIST(root='./data', train=True,
                                                  download=True, transform=transform)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
-                                              shuffle=True, num_workers=2)
+                                              shuffle=True)
 
     return trainloader
 
